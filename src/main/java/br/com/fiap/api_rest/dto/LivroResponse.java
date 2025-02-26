@@ -3,11 +3,16 @@ package br.com.fiap.api_rest.dto;
 import org.springframework.hateoas.Link;
 
 public class LivroResponse {
+    private Long id;
     private String infoLivro;
     private Link link;
 
     public LivroResponse(String infoLivro) {
         this.infoLivro = infoLivro;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getInfoLivro() {
